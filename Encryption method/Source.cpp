@@ -58,11 +58,13 @@ int main()
 			break;
 		}
 	}
+	//close and open the file for write in it
 	fileCode.close();
 	fileCode.open("CodeText.txt");
+	//reset the new text coded/decoded
 	fileCode << TextCoded;
 
-
+	//finish
 	fileCode.close();
 	//system("pause");
 	return 0;
